@@ -52,7 +52,7 @@ def run():
         ]
     }
 
-    # new schemas that I will use when writing my data to bigquery
+    # new schemas that I will use when writing my data to bigquery, required = NULL values are not allowed
     new_schema1 = {
         'fields': [
             {'name': 'cust_tier_code', 'type': 'STRING', 'mode': 'REQUIRED'},
@@ -121,6 +121,6 @@ def run():
         pass
 
 if __name__ == '__main__':
-    print("done")
+    print("Hello")
     run()
     pass
